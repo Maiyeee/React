@@ -3,16 +3,17 @@ import "./App.css";
 
 function App() {
   const members = [
-    { name: "Juan Dela Cruz", role: "Leader" },
-    { name: "Maria Santos", role: "Designer" },
-    { name: "Pedro Reyes", role: "Developer" },
+    { name: "Rhiza Mae Dacutanan", role: "Member" },
+    { name: "Sharah De Dios", role: "Member" },
+    { name: "Marielle Manahon", role: "Member" },
+    { name: "Stephanie Nabor", role: "Member" },
   ];
 
   return (
     <div className="container">
       <header className="header">
-        <h1>Our Group</h1>
-        <p>We build simple and useful projects.</p>
+        <h1>Group 5</h1>
+        <p>We are group 5, BSIT 2A.</p>
       </header>
 
       <section className="about">
