@@ -7,10 +7,10 @@ function Activity2() {
 
   useEffect(() => {
     const data = [
-      { name: "Rhiza Mae Dacutanan", role: "Frontend" },
-      { name: "Sharah De Dios", role: "Backend" },
-      { name: "Marielle Manahon", role: "UI Designer" },
-      { name: "Stephanie Nabor", role: "Tester" },
+      { name: "Rhiza Mae Dacutanan" },
+      { name: "Sharah De Dios" },
+      { name: "Marielle Manahon" },
+      { name: "Stephanie Nabor" },
     ];
 
     setMembers(data);
