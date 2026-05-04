@@ -1,71 +1,199 @@
-.a2-container {
-  padding: 40px 20px;
-  text-align: center;
-  background: #0f172a;
-  color: #f8fafc;
-}
-
-.a2-header {
-  margin-bottom: 30px;
-}
-
-.a2-header h1 {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-size: 2.2rem;
+  padding: 0;
 }
 
-.a2-header p {
-  color: #94a3b8;
-}
-
-.a2-members {
-  max-width: 900px;
+.a2-page {
+  padding: 2rem 1.5rem;
+  max-width: 720px;
   margin: auto;
+  font-family: sans-serif;
+  color: #1e293b;
 }
 
-.a2-members h2 {
-  margin-bottom: 20px;
+.a2-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.a2-topbar-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #1d4ed8;
+}
+
+.a2-topbar-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.a2-topbar-text {
+  flex: 1;
+}
+
+.a2-topbar-text h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.a2-topbar-text p {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+
+.a2-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+.a2-clock-time {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+}
+
+.a2-clock-date {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+
+.a2-stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.75rem;
+}
+
+.a2-stat {
+  flex: 1;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.a2-stat-label {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.a2-stat-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.a2-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.a2-section-label span {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.a2-section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
 }
 
 .a2-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 12px;
 }
 
 .a2-card {
-  background: #1e293b;
-  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
-  transition: 0.3s;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.15s, background 0.15s;
 }
 
 .a2-card:hover {
-  transform: translateY(-6px);
-  background: #334155;
+  border-color: #bfdbfe;
+  background: #f0f7ff;
 }
 
 .a2-avatar {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 10px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #6366f1;
+  background: #dbeafe;
+  color: #1d4ed8;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.a2-card h3 {
-  margin: 10px 0 5px;
+.a2-card-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1e293b;
+  text-align: center;
+  line-height: 1.4;
 }
 
-.a2-card p {
-  font-size: 0.9rem;
-  color: #cbd5f5;
+.a2-badge {
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 99px;
+  padding: 2px 10px;
+}
+
+.a2-badge.leader {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.a2-badge.member {
+  background: #f1f5f9;
+  color: #475569;
 }
 
 .a2-empty {
-  color: #f87171;
+  font-size: 14px;
+  color: #ef4444;
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 89.99,
+    "rating": 4.5,
+    "inStock": true,
+    "description": "Premium sound quality with active noise cancellation and 30-hour battery life."
+  },
+  {
+    "id": 2,
+    "name": "Running Shoes",
+    "category": "Footwear",
+    "price": 124.99,
+    "rating": 4.8,
+    "inStock": true,
+    "description": "Lightweight and breathable design ideal for long-distance runners."
+  },
+  {
+    "id": 3,
+    "name": "Coffee Maker",
+    "category": "Appliances",
+    "price": 59.99,
+    "rating": 4.2,
+    "inStock": false,
+    "description": "Brew up to 12 cups with programmable timer and auto-shutoff feature."
+  },
+  {
+    "id": 4,
+    "name": "Yoga Mat",
+    "category": "Fitness",
+    "price": 34.99,
+    "rating": 4.6,
+    "inStock": true,
+    "description": "Non-slip surface with alignment lines, perfect for all yoga styles."
+  },
+  {
+    "id": 5,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "price": 199.99,
+    "rating": 4.7,
+    "inStock": true,
+    "description": "Track fitness, receive notifications, and monitor your health 24/7."
+  },
+  {
+    "id": 6,
+    "name": "Backpack",
+    "category": "Accessories",
+    "price": 49.99,
+    "rating": 4.3,
+    "inStock": false,
+    "description": "Water-resistant 30L pack with laptop compartment and ergonomic straps."
+  }
+]
